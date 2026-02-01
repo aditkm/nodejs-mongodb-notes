@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/ui/student/<%= result._id %>" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= result.name %>" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" value="<%= result.age %>" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= result.email %>" required><br><br>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college"  value = "<%= result.college%>" required><br><br>
+
+        <button>Update Student</button>
+    </form>
+</body>
+</html>
